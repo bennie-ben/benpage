@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Redirect, Switch} from "react-router-dom";
 import Header from "Components/Header";
+import Footer from "Components/Footer";
 import About from "Components/Routes/About";
 import Comment from "Components/Routes/Comment";
 import Home from "Components/Routes/Home";
@@ -19,6 +20,7 @@ const Router = () => {
                 <Redirect from ="*" to="/"/>
             </Switch>
             </>
+            <Footer/>
         </BrowserRouter>
     )
 }
